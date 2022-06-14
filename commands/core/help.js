@@ -14,7 +14,7 @@ module.exports = {
 
         const commands = client.commands.filter(x => x.showHelp !== false);
 
-        embed.setDescription('This is Official bot of SJ Builds');
+        embed.setDescription('This SJ Builds');
         embed.addField(`Enabled - ${commands.size}`, commands.map(x => `\`${x.name}${x.aliases[0] ? ` (${x.aliases.map(y => y).join(', ')})\`` : '\`'}`).join(' | '));
 
         embed.setTimestamp();
